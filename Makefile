@@ -9,7 +9,7 @@ all: $(JUNIT)
 
 install: all
 	install -d $(DESTDIR)$(JARDIR)
-	install -t $(DESTDIR)$(JARDIR) $(JUNIT)
+	install -m 644 -t $(DESTDIR)$(JARDIR) $(JUNIT)
 
 clean:
 	ant clean
